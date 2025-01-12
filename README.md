@@ -12,11 +12,9 @@
 - [Model Checkpointing](#model-checkpointing)
 - [Validation](#validation)
 - [TensorBoard Integration](#tensorboard-integration)
-- [Directory Structure](#directory-structure)
 - [Code Examples](#code-examples)
 - [References](#references)
 - [License](#license)
-- [Contributing](#contributing)
 
 ## Features
 
@@ -188,21 +186,6 @@ writer.add_scalar('learning rate', scheduler.get_last_lr()[0], global_step)
 writer.flush()
 ```
 
-## Directory Structure
-
-```
-.
-├── config/
-│   └── config.py        # Configuration parameters
-├── models/
-│   └── transformer.py   # Model implementation
-├── train.py            # Training script
-├── utils/
-│   ├── dataloader.py   # Data loading utilities
-│   └── tokenizer.py    # Tokenization utilities
-└── README.md
-```
-
 ## Code Examples
 
 Complete training loop:
@@ -278,13 +261,3 @@ def train_model(config):
 ## License
 
 MIT License
-
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-For major changes, please open an issue first to discuss what you would like to change.
